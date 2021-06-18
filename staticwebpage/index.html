@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <title>Web Development Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="customestylesheet.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+</head>
+<h1>Header</h1>
+<nav class="mb-2 p-2 navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand">Top Nav</a>
+  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="topnav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="topnav">
+    <ul class="navbar-nav">
+      <li class="navbar-item">Link1</li>
+      <li class="navbar-item">Link2</li>
+      <li class="navbar-item">Link3</li>
+    </ul>
+  </div>
+</nav>
+<body>
+  <h1>Image Link Text</h1>
+    <div class="container-fluid">
+        <h3>This is the container header</h3>
+        <p class="h1">Header with H1</p>
+    </div>
+    <div class="container-fluid">
+        <div class="media">
+            <img class="rounded align-self-start mr-3" src="./image.jpg" style="height: 64px;width: 64px;" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0">Top-aligned media</h5>
+              <p class="lead">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+              <div class="media mt-3">
+                <a class="pr-3" href="#">
+                  <img class="rounded" src="./image.jpg"  style="height: 64px;width: 64px;" alt="Generic placeholder image">
+                </a>
+                <div class="media-body">
+                  <h5 class="mt-0">Media heading</h5>
+                  <p class="lead">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <h1>Table</h1>
+    <div class="container-fluid table-responsive-sm">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+                </tr>
+                <tr>
+                  <td>Mary</td>
+                  <td>Moe</td>
+                  <td>mary@example.com</td>
+                </tr>
+                <tr>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                </tr>
+              </tbody>
+        </table>
+    </div>
+    <h1>Card</h1>
+    <div class="container-fluid row">
+        <div class="col-lg-6 col-md-4 col-sm-3">
+            <figure class="figure">
+                <img src="./image.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption">A caption for the above image.</figcaption>
+            </figure>
+        </div>
+        <div class="col-lg-6 col-md-4 col-sm-3">
+            <figure class="figure">
+                <img src="./image.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption">A caption for the above image.</figcaption>
+            </figure>
+        </div>
+        <div class="col-lg-6 col-md-4 col-sm-3">
+            <figure class="figure">
+                <img src="./image.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption">A caption for the above image.</figcaption>
+            </figure>
+        </div>
+        <div class="col-lg-6 col-md-4 col-sm-3">
+            <figure class="figure">
+                <img src="./image.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption">A caption for the above image.</figcaption>
+            </figure>
+        </div>
+    </div>
+    <h1>Alingment</h1>
+    <div class="container-fluid">
+        <div class="clearfix">
+            <img src="./image.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+          
+            <p>
+              A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+            </p>
+          
+            <p>
+              As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+            </p>
+          
+            <p>
+              And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+            </p>
+        </div>
+    </div>
+</body>
+<h1>Footer</h1>
+<footer class="footer bg-dark text-center">
+  <div class="footer-copyright text-center py-3" style="color: white;">© 2021 Copyright 
+      <a href="http://localhost:8082/"> KStory</a>
+    </div>
+</footer>
