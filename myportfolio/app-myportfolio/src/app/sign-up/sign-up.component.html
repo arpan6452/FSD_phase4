@@ -1,0 +1,58 @@
+<div class="p-4">
+  <form [formGroup] = "signUpForm" (ngSubmit)="onSubmit()">
+    <div class="">
+      <h2>Sign Up Form</h2>
+      <div class="form-group">
+        <label for="username">Please enter your username</label>
+        <input class="p-2 form-control" id="username" name="username" formControlName="username" placeholder="Rob Johnson"/>
+        <span style="color: red;" *ngIf="!signUpForm.get('username').valid && signUpForm.get('username').touched ">
+          Username cannot be empty
+        </span>
+      </div>
+      <div class="form-group">
+        <label for="email">Please enter your email</label>
+        <input class="p-2 form-control" type="text" id="email" name="email" formControlName="email" placeholder="Rob@gmail.com"/>
+        <span style="color: red;" *ngIf="!signUpForm.get('email').valid && signUpForm.get('email').touched ">
+          Email cannot be empty
+        </span>
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Please enter your Phone Number</label>
+        <input class="p-2 form-control" type="email" id="phoneNumber" name="phoneNumber" formControlName="phoneNumber" placeholder="0112347898"/>
+        <span style="color: red;" *ngIf="!signUpForm.get('phoneNumber').valid && signUpForm.get('phoneNumber').touched ">
+          <span style="color: red;" *ngIf="signUpForm.get('phoneNumber').errors['phonenumberisInvalid'] ">
+            Phone Number should be of 10 digits
+          </span>
+          <span style="color: red;" *ngIf="signUpForm.get('phoneNumber').errors['required'] ">
+            PhoneNumber cannot be empty
+          </span>
+        </span>
+
+      </div>
+      <div class="form-group">
+        <label for="password">Please enter your Password</label>
+        <input class="p-2 form-control" type="password" id="password" name="password" formControlName="password" >
+        <span style="color: red;" *ngIf="!signUpForm.get('password').valid && signUpForm.get('password').touched ">
+          <span style="color: red;" *ngIf="signUpForm.get('password').errors['passwordisInvalid'] ">
+            Password should contain at least a captial, small letter a digit and an special charector.
+          </span>
+          <span style="color: red;" *ngIf="signUpForm.get('password').errors['required'] ">
+            Password cannot be empty
+          </span>
+        </span>
+      </div>
+      <!-- <div class="form-group">
+        <label for="confirmPassword">Please confirm your Password</label>
+        <input class="p-2 form-control" type="password" id="confirmPassword" name="confirmPassword" formControlName="confirmPassword" >
+        <span style="color: red;" *ngIf="!signUpForm.get('confirmPassword').valid && signUpForm.get('confirmPassword').touched ">
+          Please enter a valid password
+        </span>
+        <span style="color: red;" *ngIf="!signUpForm.get('confirmPassword').valid && signUpForm.get('confirmPassword').touched ">
+          Confirm Password cannot be empty
+        </span>
+      </div> -->
+      <button [disabled] = "!signUpForm.valid" class="btn btn-primary mt-2 float-end" type="submit">Submit</button>
+      <span>Already Signed Up!! Please <a routerLink="/signInPage">LogIn</a></span>
+    </div>
+  </form>
+</div>
